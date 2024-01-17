@@ -1,1 +1,10 @@
-YOUR_EMAIL_HERE
+venkat.200898@gmail.com
+
+Chnages made:
+
+1. The fixed position property has been removed for the dropdown container.
+2. Checkbox for each transaction was initially hidden because the display property was set to "none". Instead of just making it visible, I moved the "onchange" function to label itself using the "onclick" function.
+3. Replaced "fetchWithoutCache" with "fetchWithCache" to fetch the latest mock data from json after checking or unchecking the transaction approval.
+4. The "View More" botton has been hidden for each employee selection page by adding a state "Employee" as a condition. As it was loading all the transactions irrespective of the selection of a specific employee.
+5. The absence of ID for the "All Employee" option in the dropdown dialog led to runtime error. this was taken care by adding an extra check.
+6. For the "View More" button, there was a runtime error when the botton was interacted on the last page of transaction list. This was fixed by adding an extra check.
